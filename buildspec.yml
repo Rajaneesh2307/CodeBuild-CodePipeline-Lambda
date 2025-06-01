@@ -9,6 +9,6 @@ phases:
 
 artifacts:
   files:
-    - app.js
+    - index.js
     - node_modules/**
     - package.json
