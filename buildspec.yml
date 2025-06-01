@@ -3,12 +3,11 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 20
-    commands:
-      - npm install
+      nodejs: 18
   build:
     commands:
-      - zip -r function.zip .
+      - npm install
+      - zip -r function.zip app.js node_modules package.json
 
 artifacts:
   files:
