@@ -1,11 +1,6 @@
-const express = require("express");
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-app.get("/", (req, res) => {
-  res.send("Hello from Node.js on Lambda!");
-});
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+exports.handler = async (event) => {
+  return {
+    statusCode: 200,
+    body: "Hello from Node.js Lambda!",
+  };
+};
