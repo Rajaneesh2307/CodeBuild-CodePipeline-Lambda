@@ -1,6 +1,5 @@
 const express = require("express");
-const serverless = require("serverless-http"); // Required for wrapping Express in Lambda
-
+const serverless = require("serverless-http");
 const app = express();
 
 app.get("/", (req, res) => {
